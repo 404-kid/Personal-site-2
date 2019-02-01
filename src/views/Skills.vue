@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: 'Blog',
+  name: 'Skills',
   components: {
     
   }

@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: 'Portfolio',
+  name: 'Projects',
   components: {
     
   }

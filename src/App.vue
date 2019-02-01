@@ -1,25 +1,30 @@
 <template>
-  <div id="app">
-    <!-- <Banner/> -->
-    <Nav/>
-    <router-view/>
-    <Footer/>
+  <div>
+    <BSmall/>
+    <div id="app" class="d-flex flex-row">
+      <Nav/>
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
 import Nav from "@/components/Nav"
-import Banner from "@/components/Banner"
-import Footer from "@/components/Footer"
+import BSmall from "@/components/BSmall"
+
 
 export default {
   components: {
     Nav,
-    Banner,
-    Footer
+    BSmall
   }
 }
 </script>
 
 <style>
+#app{
+  background-color: #f4e9d9;
+  height: 100vh;
+}
+h1 { font-family: Lato; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Lato; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Lato; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Lato; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Lato; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
 </style>

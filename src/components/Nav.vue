@@ -1,20 +1,37 @@
 <template>
-  <div class="d-flex flex-row justify-content-around bg-dark">
-    <router-link to="/" class="nav-link"><h3>Home</h3></router-link>
-    <router-link to="/portfolio" class="nav-link"><h3>Portfolio</h3></router-link>
-    <router-link to="/blog" class="nav-link"><h3>Blog</h3></router-link>
-    <router-link to="/contact" class="nav-link"><h3>Contact</h3></router-link>
+  <div class="justify-content-center d-flex flex-column nav">
+    <router-link to="/" class="navItem">
+      <h3>Home</h3>
+    </router-link>
+    <router-link to="/about" class="navItem">
+      <h3>About</h3>
+    </router-link>
+    <router-link to="/skills" class="navItem">
+      <h3>Skills</h3>
+    </router-link>
+    <router-link to="/projects" class="navItem">
+      <h3>Projects</h3>
+    </router-link>
+    <router-link to="/contact" class="navItem">
+      <h3>Contact</h3>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Nav',
-
-}
+  name: "Nav"
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.nav{
+  background-color: #f7c59f
+}
+.navItem{
+  padding: 1.5rem .5rem;
+  color: #fbfdfe;
+}
 
 </style>
