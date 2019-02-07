@@ -1,10 +1,18 @@
 <template>
   <div>
-    <p class="lrg">Salutations!</p>
-    <p class="lrg">I'm Job,</p>
-    <p class="lrg">Or B for short,</p>
-    <p class="lrg">Web Developer</p>
-    <p class="sml">Full-stack Developer / Vue.js / Data Visualization</p>
+    <div class="circleBox">
+        <div class="circle circles"/>
+        <div class="circle2 circles"/>
+        <div class="circle3 circles"/>
+    </div>
+    <div class="wrds">
+      <p class="lrg">Salutations!</p>
+
+      <p class="lrg">I'm Job,</p>
+      <p class="lrg">Or B for short,</p>
+      <p class="lrg">Web Developer</p>
+      <p class="sml">Full-stack Developer / Vue.js / Data Visualization</p>
+    </div>
   </div>
 </template>
 
@@ -17,35 +25,284 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 p {
+  z-index: 1;
+  position: relative;
+  z-index: 10;
   color: #fbfdfe;
-  background-color: #f7c59f;
+}
+.wrds {
+  padding: 1rem;
+}
+.circleBox {
+  position: relative;
 }
 .lrg {
   font-size: 7rem;
   line-height: normal;
+  animation-name: wrdAnim;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 .sml {
+  font-size: 2rem;
+  animation-name: wrdAnim;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
-.b-design {
+.circles{
   position: absolute;
-  left: 15px;
-  top: 40px;
+  background-color: #f7c59f;
+  border-radius: 50%;
+  z-index: 1;
+  animation-duration: 1.25s;
+  animation-iteration-count: 1;
 }
-#b1 {
-  position: absolute;
-  font-size: 100px;
-  color: #f48668;
+.circle {
+  height: 45rem;
+  width: 45rem;
+  top: -7rem;
+  left: -3rem;
+  animation-name: C1Anim;
 }
-#b2 {
-  position: absolute;
-  font-size: 100px;
-  left: 9px;
-  color: #6f8597;
+.circle2 {
+  height: 30rem;
+  width: 30rem;
+  top: 16rem;
+  left: -2rem;
+  animation-name: C2Anim;
 }
-#b3 {
-  position: absolute;
-  font-size: 100px;
-  left: 18px;
-  color: #fbfdfe;
+.circle3 {
+  height: 28rem;
+  width: 28rem;
+  top: 19rem;
+  left: 23rem;
+  animation-name: C3Anim;
 }
+@keyframes C1Anim {
+  0% {
+    top: -100vh;
+    left: -10vw;
+  }
+  100% {
+    top: -7rem;
+    left: -3rem;
+  }
+}
+@keyframes C2Anim {
+  0% {
+    top: 130vh;
+    left: -40vw;
+  }
+  100% {
+    top: 16rem;
+    left: -2rem;
+  }
+}
+@keyframes C3Anim {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 19rem;
+    left: 23rem;
+  }
+}
+@keyframes wrdAnim {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: rgba(0, 0, 0, 0);
+  }
+  45% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: #fbfdfe;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .lrg {
+    font-size: 6rem;
+  }
+  .circle {
+    height: 40rem;
+    width: 40rem;
+  }
+  .circle2 {
+    height: 30rem;
+    width: 30rem;
+  }
+  .circle3 {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .lrg {
+    font-size: 5.5rem;
+  }
+  .circle {
+    height: 35rem;
+    width: 35rem;
+    top: -6rem;
+    left: -1rem;
+  }
+  .circle2 {
+    height: 27rem;
+    width: 27rem;
+    top: 13rem;
+    left: -1rem;
+  }
+  .circle3 {
+    height: 23rem;
+    width: 23rem;
+    top: 17rem;
+    left: 22rem;
+  }
+@keyframes C1Anim {
+  0% {
+    top: -100vh;
+    left: -10vw;
+  }
+  100% {
+    top: -6rem;
+    left: -1rem;
+  }
+}
+@keyframes C2Anim {
+  0% {
+    top: 130vh;
+    left: -40vw;
+  }
+  100% {
+    top: 13rem;
+    left: -1rem;
+  }
+}
+@keyframes C3Anim {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 17rem;
+    left: 22rem;
+  }
+}
+}
+@media only screen and (max-width: 1400px) {
+  .lrg {
+    font-size: 5rem;
+  }
+  .sml{
+    font-size: 1.7rem;
+  }
+  .circle {
+    height: 31rem;
+    width: 31rem;
+    top: -5rem;
+    left: -1rem;
+  }
+  .circle2 {
+    top: 12rem;
+    left: -.5rem;
+    height: 25rem;
+    width: 25rem;
+  }
+  .circle3 {
+    height: 21rem;
+    width: 21rem;
+    top: 15rem;
+    left: 17rem;
+  }
+@keyframes C1Anim {
+  0% {
+    top: -100vh;
+    left: -10vw;
+  }
+  100% {
+    top: -5rem;
+    left: -1rem;
+  }
+}
+@keyframes C2Anim {
+  0% {
+    top: 130vh;
+    left: -40vw;
+  }
+  100% {
+    top: 12rem;
+    left: -.5rem;
+  }
+}
+@keyframes C3Anim {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 15rem;
+    left: 17rem;
+  }
+}
+}
+@media only screen and (max-width: 1270px) {
+  .lrg {
+    font-size: 4.5rem;
+  }
+  .sml{
+    font-size: 1.3rem;
+  }
+  .circle {
+    height: 27rem;
+    width: 27rem;
+    top: -5rem;
+    left: 0rem;
+  }
+  .circle2 {
+    top: 9rem;
+    left: -1.5rem;
+    height: 23rem;
+    width: 23rem;
+  }
+  .circle3 {
+    height: 18rem;
+    width: 18rem;
+    top: 13rem;
+    left: 15rem;
+  }
+@keyframes C1Anim {
+  0% {
+    top: -100vh;
+    left: -10vw;
+  }
+  100% {
+    top: -5rem;
+    left: 0rem;
+  }
+}
+@keyframes C2Anim {
+  0% {
+    top: 130vh;
+    left: -40vw;
+  }
+  100% {
+    top: 9rem;
+    left: -1.5rem;
+  }
+}
+@keyframes C3Anim {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 13rem;
+    left: 15rem;
+  }
+}
+}
+
 </style>

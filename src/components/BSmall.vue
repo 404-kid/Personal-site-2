@@ -18,6 +18,7 @@ export default {
   position: absolute;
   left: 15px;
   top: 40px;
+  z-index: 10;
 }
 #b1{
   position: absolute;
