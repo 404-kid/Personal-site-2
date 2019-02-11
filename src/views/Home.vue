@@ -30,22 +30,20 @@ export default {
   width: 100%;
   height: 100%;
 }
-@media only screen and (max-width: 1070px) {
-  .home{
-    flex-direction: column !important;
-    
-    width: 100%;
-  }
-}
 .small{
-  visibility: hidden;
+  display:none;
 }
 @media only screen and (max-width: 1070px) {
   .big{
-    visibility: hidden;
+    display:none;
   }
   .small{
-    visibility: visible;
+    display:block;
+  }
+  .home{
+    flex-direction: column !important;
+    width: 100%;
   }
 }
+
 </style>

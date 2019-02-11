@@ -32,9 +32,17 @@ export default {
   width: 100%;
 }
 html {
+  background-size: contain;
   overflow: hidden !important;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
+}
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body {
+  position: relative;
 }
 h1 {
   font-family: Lato;

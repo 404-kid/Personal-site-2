@@ -37,4 +37,21 @@ export default {
   left: 18px;
   color: #fbfdfe;
 }
+@media only screen and (max-height: 768px) {
+  #b1{
+    font-size: 70px;
+  }
+  #b2{
+    font-size: 70px;
+    left: 6.5px;
+  }
+  #b3{
+    font-size: 70px;
+    left: 13px;
+  }
+  .b-design{
+    left: 10px;
+    top: 20px;
+  }
+}
 </style>

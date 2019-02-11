@@ -15,10 +15,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .b-design {
-  position: absolute;
+  position: fixed;
   transform: rotate(328deg);
   left: 25vw;
-  top: 120vw;
+  bottom: 15vw;
   z-index: 10;
 }
 .B{
@@ -57,37 +57,29 @@ export default {
     left: 3.7;
   }
 }
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-height: 1366px) {
   .b-design{
-    top: 87vw
-  }
-}
-@media only screen and (max-width: 970px) {
-  .b-design{
-    top: 90vw
+    bottom: 25vw;
   }
 }
 @media only screen and (max-width: 770px) {   
   .b-design{
-    top: 110vw
+    bottom: 25vw;
   }
 }
 @media only screen and (max-width: 625px) {
   .b-design{
-    top: 65vh
+    bottom: 30vw;
   }
-  /* .B{
-    font-size: 27rem;
+}
+@media only screen and (max-width: 500px) {
+  .b-design{
+    bottom: 40vw;
   }
-  #b1{
-    left: 1.4rem;
+}
+@media only screen and (max-height: 768px) {
+  .b-design{
+    z-index: -1;
   }
-  #b2{
-    left: 3.9rem;
-  }
-  #b3{
-    left: 6.4rem;
-  } */
-
 }
 </style>

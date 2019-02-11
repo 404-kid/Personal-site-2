@@ -1,147 +1,325 @@
 <template>
-<div class="about">
-  <div class="wrds">
-    <p class="lrg">About me</p>
-    <p class="sml">As dual citizen of the U.K and the U.S, I’ve been fortunate enough to travel. Currently I am based out of Denver, CO. My truest passion lies in creating things that amaze others mostly that takes the form of creating Web Apps. I have a particular disposition towards creating 2D and 3D animations.</p>
+  <div>
+    <div class="circleBox">
+        <div class="circle circles"/>
+        <div class="circle2 circles"/>
+        <div class="circle3 circles"/>
+    </div>
+    <div class="wrds">
+      <p class="lrg">About Me</p>
+      <p class="sml">A dual citizen of the U.K and the U.S, I’ve been fortunate enough to travel. Currently I am based out of Denver, CO. My truest passion lies in creating things that amaze others mostly that takes the form of creating Web Apps. I have a particular disposition towards creating 2D and 3D animations.</p>
+    </div>
   </div>
-  <div class="circle"/>
-  <div class="circle2"/>
-  <div class="circle3"/>
-  <div class="circle4"/>
-  <div class="circle5"/>
-</div>
 </template>
 
 <script>
 export default {
-  name: "AboutTxt",
+  name: "AboutTxt"
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.about{
-  max-width: 37%;
-}
 p {
   z-index: 1;
   position: relative;
   z-index: 10;
   color: #fbfdfe;
 }
+.wrds {
+  padding: 3rem;
+  width: 80%
+}
+.circleBox {
+  position: relative;
+}
 .lrg {
-  font-size: 5rem;
+  font-size: 6rem;
   line-height: normal;
-  animation-name: wrdAnim;
-  animation-duration: 1.5s;
+  animation-name: wrdAnim2;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   color: #e88d67;
-  margin-bottom: 3rem;
 }
 .sml {
-  font-size: 1.8rem;
-  line-height: normal;
-  animation-name: wrdAnimS;
-  animation-duration: 1.5s;
+  padding-left: 2rem;
+  font-size: 2.5rem;
+  animation-name: wrdAnim;
+  animation-duration: 3s;
   animation-iteration-count: 1;
-   margin-bottom: 3rem;
+  line-height: 130%;
 }
-.circle{
+.circles{
   position: absolute;
-  height: 20rem;
-  width: 20rem;
   background-color: #6f8597;
   border-radius: 50%;
-  z-index: 0;
-  top: 6rem;
-  left: 20rem;
+  z-index: 1;
+  animation-duration: 1.25s;
+  animation-iteration-count: 1;
+}
+.circle {
+  height: 45rem;
+  width: 45rem;
+  top: -5rem;
+  left: 0rem;
   animation-name: C1Anim;
-  animation-duration: .75s;
-  animation-iteration-count: 1;
 }
-.circle2{
-  position: absolute;
-  height: 25rem;
-  width: 25rem;
-  background-color: #6f8597;
-  border-radius: 50%;
-  z-index: 0;
-  top: 16rem;
-  left: 9rem;
+.circle2 {
+  height: 30rem;
+  width: 30rem;
+  top: 20rem;
+  left: 0rem;
   animation-name: C2Anim;
-  animation-duration: .75s;
-  animation-iteration-count: 1;
 }
-.circle3{
-  position: absolute;
-  height: 18rem;
-  width: 18rem;
-  background-color: #6f8597;
-  border-radius: 50%;
-  z-index: 0;
-  top: 21rem;
-  left: 30rem;
+.circle3 {
+  height: 28rem;
+  width: 28rem;
+  top: 19rem;
+  left: 23rem;
   animation-name: C3Anim;
-  animation-duration: .75s;
-  animation-iteration-count: 1;
-}
-.circle4{
-  position: absolute;
-  height: 15rem;
-  width: 15rem;
-  background-color: #6f8597;
-  border-radius: 50%;
-  z-index: 0;
-  top: 1rem;
-  left: 9rem;
-  animation-name: C4Anim;
-  animation-duration: .75s;
-  animation-iteration-count: 1;
-}
-.circle5{
-  position: absolute;
-  height: 15rem;
-  width: 15rem;
-  background-color: #6f8597;
-  border-radius: 50%;
-  z-index: 0;
-  top: 10rem;
-  left: 8rem;
-  animation-name: C5Anim;
-  animation-duration: .75s;
-  animation-iteration-count: 1;
-}
-@keyframes C5Anim {
-  0%   {top: -10%; left: -30%}
-  100% {top: 10rem; left: 8rem;}
-}
-@keyframes C4Anim {
-  0%   {top: -10%; left: -30%}
-  100% {top: 1rem; left: 9rem;}
-}
-@keyframes C3Anim {
-  0%   {top: 100%; left: 70%}
-  100% {top: 21rem; left: 30rem;}
-}
-@keyframes C2Anim {
-  0%   {top: 30%; left: -10%}
-  100% {top: 16rem; left: 9rem;}
 }
 @keyframes C1Anim {
-  0%   {top: -70%; left: -10%}
-  100% {top: 6rem; left: 20rem;}
+  0% {
+    top: -100vh;
+    left: -10vw;
+  }
+  100% {
+    top: -5rem;
+    left: 0rem;
+  }
+}
+@keyframes C2Anim {
+  0% {
+    top: 130vh;
+    left: -40vw;
+  }
+  100% {
+    top: 20rem;
+    left: 0rem;
+  }
+}
+@keyframes C3Anim {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 19rem;
+    left: 23rem;
+  }
 }
 @keyframes wrdAnim {
-  0%   {color: rgba(0, 0, 0, 0);}
-  25%   {color: rgba(0, 0, 0, 0);}
-  45%   {color: rgba(0, 0, 0, 0);}
-  100% {color:#e88d67;}
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: rgba(0, 0, 0, 0);
+  }
+  45% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: #fbfdfe;
+  }
 }
-@keyframes wrdAnimS {
-  0%   {color: rgba(0, 0, 0, 0);}
-  25%   {color: rgba(0, 0, 0, 0);}
-  45%   {color: rgba(0, 0, 0, 0);}
-  100% {color:#fbfdfe;}
+@keyframes wrdAnim2 {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: rgba(0, 0, 0, 0);
+  }
+  45% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: #e88d67;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .lrg {
+    font-size: 5.5rem;
+  }
+  .sml{
+    font-size: 2.3rem;
+  }
+  .circle {
+    height: 40rem;
+    width: 40rem;
+  }
+  .circle2 {
+    height: 30rem;
+    width: 30rem;
+  }
+  .circle3 {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .lrg {
+    font-size: 5.5rem;
+  }
+  .circle {
+    height: 35rem;
+    width: 35rem;
+    top: -6rem;
+    left: -1rem;
+  }
+  .circle2 {
+    height: 27rem;
+    width: 27rem;
+    top: 13rem;
+    left: -1rem;
+  }
+  .circle3 {
+    height: 23rem;
+    width: 23rem;
+    top: 17rem;
+    left: 22rem;
+  }
+@keyframes C1Anim {
+  0% {
+    top: -100vh;
+    left: -10vw;
+  }
+  100% {
+    top: -6rem;
+    left: -1rem;
+  }
+}
+@keyframes C2Anim {
+  0% {
+    top: 130vh;
+    left: -40vw;
+  }
+  100% {
+    top: 13rem;
+    left: -1rem;
+  }
+}
+@keyframes C3Anim {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 17rem;
+    left: 22rem;
+  }
+}
+}
+@media only screen and (max-width: 1400px) {
+  .lrg {
+    font-size: 5rem;
+  }
+  .sml{
+    font-size: 1.7rem;
+  }
+  .circle {
+    height: 31rem;
+    width: 31rem;
+    top: -5rem;
+    left: -1rem;
+  }
+  .circle2 {
+    top: 12rem;
+    left: -.5rem;
+    height: 25rem;
+    width: 25rem;
+  }
+  .circle3 {
+    height: 21rem;
+    width: 21rem;
+    top: 15rem;
+    left: 17rem;
+  }
+@keyframes C1Anim {
+  0% {
+    top: -100vh;
+    left: -10vw;
+  }
+  100% {
+    top: -5rem;
+    left: -1rem;
+  }
+}
+@keyframes C2Anim {
+  0% {
+    top: 130vh;
+    left: -40vw;
+  }
+  100% {
+    top: 12rem;
+    left: -.5rem;
+  }
+}
+@keyframes C3Anim {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 15rem;
+    left: 17rem;
+  }
+}
+}
+@media only screen and (max-width: 1270px) {
+  .lrg {
+    font-size: 4.5rem;
+  }
+  .sml{
+    font-size: 1.3rem;
+  }
+  .circle {
+    height: 27rem;
+    width: 27rem;
+    top: -5rem;
+    left: 0rem;
+  }
+  .circle2 {
+    top: 9rem;
+    left: -1.5rem;
+    height: 23rem;
+    width: 23rem;
+  }
+  .circle3 {
+    height: 18rem;
+    width: 18rem;
+    top: 13rem;
+    left: 15rem;
+  }
+@keyframes C1Anim {
+  0% {
+    top: -100vh;
+    left: -10vw;
+  }
+  100% {
+    top: -5rem;
+    left: 0rem;
+  }
+}
+@keyframes C2Anim {
+  0% {
+    top: 130vh;
+    left: -40vw;
+  }
+  100% {
+    top: 9rem;
+    left: -1.5rem;
+  }
+}
+@keyframes C3Anim {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 13rem;
+    left: 15rem;
+  }
+}
 }
 
 </style>

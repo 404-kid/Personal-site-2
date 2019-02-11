@@ -26,7 +26,8 @@ export default {
 <style scoped>
 .mobleTxt{
   position: absolute;
-  top: 16vh;
+  top: 20vh;
+  z-index: 0;
 }
 p {
   z-index: 1;
@@ -170,6 +171,11 @@ p {
   }
   .sml{
     visibility: hidden;
+  }
+}
+@media only screen and (max-height: 768px) {
+  .mobleTxt{
+    top: 30vh;
   }
 }
 </style>

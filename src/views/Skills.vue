@@ -1,7 +1,7 @@
 <template>
   <div class="skills d-flex justify-content-around align-items-center">
-    <skills-txt/>
-    <div class="animation"/>
+    <!-- <skills-txt/>
+    <div class="animation"/> -->
   </div>
 </template>
 
