@@ -105,17 +105,6 @@ export default {
   background-color: #fbfdfe;
   opacity: .5;
 }
-@media only screen and (max-width: 1070px) {
-  .nav {
-    flex-direction: row !important;
-  }
-  .navs {
-    flex-direction: row !important;
-  }
-  .navItem{
-    padding: 2.3rem 1.5rem;
-  }
-}
 @media only screen and (max-width: 850px) {
   .dropDownButton{
     visibility: visible;
@@ -133,9 +122,20 @@ export default {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 1070px) {
+  .nav {
+    flex-direction: row !important;
+  }
+  .navs {
+    flex-direction: row !important;
+  }
+  .navItem{
+    padding: 2.3rem 1.5rem;
+  }
+}
 @media only screen and (max-height: 768px) {
   .navItem{
-    padding: 1rem 1.5rem;
+    padding: 1rem 0.1rem;
   }
   .dropDownButton{
     height: 2.5rem;
@@ -144,4 +144,17 @@ export default {
     opacity: .7;
   }
 }
+@media only screen and (max-width: 1070px) and (max-height: 768px) {
+  .nav {
+    flex-direction: row !important;
+  }
+  .navs {
+    flex-direction: row !important;
+  }
+  .navItem{
+    padding: 1.2rem 1.5rem;
+  }
+}
+
+
 </style>

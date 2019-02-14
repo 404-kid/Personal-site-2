@@ -59,7 +59,7 @@ export default {
 }
 @media only screen and (max-height: 1366px) {
   .b-design{
-    bottom: 25vw;
+    bottom: 18vw;
   }
 }
 @media only screen and (max-width: 770px) {   
@@ -80,6 +80,15 @@ export default {
 @media only screen and (max-height: 768px) {
   .b-design{
     z-index: -1;
+  }
+}
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  .b-design{
+    bottom: 35vw;
   }
 }
 </style>
